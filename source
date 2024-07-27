@@ -1,0 +1,99 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+    local Window = OrionLib:MakeWindow({Name = "Pickles Dahood Script Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+   
+   
+   function azureModded()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Actyrn/Scripts/main/AzureModded"))()
+   end
+-- tabs 
+   local AimbotTab = Window:MakeTab({
+        Name = "Aimbot",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
+    })
+    
+    local AntiTab = Window:MakeTab({
+        Name = "Anti",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
+    })
+    
+    local AutoFarmTab = Window:MakeTab({
+        Name = "AutoFarmTab",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
+    })
+
+    local MiscTab = Window:MakeTab({
+        Name = "Misc",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
+    })
+
+-- buttons
+    AimbotTab:AddButton({
+        Name = "Azure Modded",
+        Callback = function()
+                  azureModded()
+          end    
+    })
+
+    AntiTab:AddButton({
+        Name = "Pickles Antilock",
+        Callback = function()
+            loadstring(game:HttpGet("https://pastefy.app/fedPYnOA"))()
+          end    
+    })
+    
+    AimbotTab:AddButton({
+        Name = "Swagmode",
+        Callback = function()
+                loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002'))()
+          end    
+    })
+
+    AutoFarmTab:AddButton({
+        Name = "AutoFarm 1",
+        Callback = function()
+                loadstring(game:HttpGet("https://pastebin.com/raw/PHT5eek0", true))()
+          end    
+    })
+
+
+    MiscTab:AddButton({
+        Name = "Infinite Yield",
+        Callback = function()
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/ttwizz/infiniteyield/master/source.lua", true))()
+          end    
+    })
+   
+    MiscTab:AddButton({
+        Name = "Chat Spammer",
+        Callback = function()
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/scripthubekitten/chatspammer/main/chatspammer", true))()
+          end    
+    })
+
+    AimbotTab:AddButton({
+        Name = "Dahood Troll",
+        Callback = function()
+                loadstring(game:HttpGet('https://raw.githubusercontent.com/cool5013/TBO/main/TBOscript'))()
+          end    
+    })
+    MiscTab:AddButton({
+        Name = "Arsenal",
+        Callback = function()
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/Insertl/QuotasHub/main/BETAv1.3"))()     
+          end    
+    })
+    --toggles
+
+
+
+
+
+
+
+ 
+    OrionLib:Init()
