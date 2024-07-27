@@ -7,7 +7,7 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shl
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Actyrn/Scripts/main/AzureModded"))()
    end
 -- tabs 
-   local AimbotTab = Window:MakeTab({
+   local DahoodTab = Window:MakeTab({
         Name = "Aimbot",
         Icon = "rbxassetid://4483345998",
         PremiumOnly = false
@@ -30,9 +30,13 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shl
         Icon = "rbxassetid://4483345998",
         PremiumOnly = false
     })
-
+    local ArsenalTab = Window:MakeTab({
+        Name = "Arsenal",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
+    })
 -- buttons
-    AimbotTab:AddButton({
+    DahoodTab:AddButton({
         Name = "Azure Modded",
         Callback = function()
                   azureModded()
@@ -46,7 +50,7 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shl
           end    
     })
     
-    AimbotTab:AddButton({
+    DahoodTab:AddButton({
         Name = "Swagmode",
         Callback = function()
                 loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002'))()
@@ -75,13 +79,13 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shl
           end    
     })
 
-    AimbotTab:AddButton({
-        Name = "Dahood Troll",
+    DahoodTab:AddButton({
+        Name = "TBO",
         Callback = function()
                 loadstring(game:HttpGet('https://raw.githubusercontent.com/cool5013/TBO/main/TBOscript'))()
           end    
     })
-    MiscTab:AddButton({
+    ArsenalTab:AddButton({
         Name = "Arsenal",
         Callback = function()
                 loadstring(game:HttpGet("https://raw.githubusercontent.com/Insertl/QuotasHub/main/BETAv1.3"))()     
