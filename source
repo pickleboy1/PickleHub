@@ -35,7 +35,15 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shl
         Icon = "rbxassetid://4483345998",
         PremiumOnly = false
     })
--- buttons
+    local LumberTycoonTab = Window:MakeTab({
+        Name = "Lumber Tycoon",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
+    })
+
+
+
+    -- buttons
     DahoodTab:AddButton({
         Name = "Azure Modded",
         Callback = function()
@@ -91,6 +99,14 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shl
                 loadstring(game:HttpGet("https://raw.githubusercontent.com/Insertl/QuotasHub/main/BETAv1.3"))()     
           end    
     })
+    LumberTycoonTab:AddButton({
+        Name = "Lumber Tycoon 2",
+        Callback = function()
+                loadstring(game:HttpGet("https://scriptblox.com/raw/Lumber-Tycoon-2-Op-script-Works-solara-14400"))()    
+          end    
+    })
+    
+    
     --toggles
 
 
