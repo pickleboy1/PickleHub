@@ -8,7 +8,7 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shl
    end
 -- tabs 
    local DahoodTab = Window:MakeTab({
-        Name = "Aimbot",
+        Name = "Dahood",
         Icon = "rbxassetid://4483345998",
         PremiumOnly = false
     })
